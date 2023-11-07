@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toss&Roll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    #toss{
+        background-color:#214001; 
+        color:lightgreen; 
+        padding: 10px;
+        border-radius: 10px;
+        font-family: Handlee;
+        font-size: 2rem;
+        border: 0;
+    }
+    #toss:hover{
+        cursor: pointer;
+    }
+    body{
+        background: -webkit-linear-gradient(45deg, #ff6600 50%, #ff3300 50%);
+    }
+    #tossImg{
+        border-radius: 50%;
+    }
+    #outer-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    #toss-img-div{
+        padding-bottom: 20px;
+    }
+    #tossText{
+        display: none;
+        font-family: Handlee;
+        font-weight: 700;
+        color:#214001;
+        font-size: 3rem;
+    }
+</style>
+<body>
+    <div id = "outer-box">
+        <div id = "toss-img-div">
+            <img id = "tossImg" src = "heads.png"/>
+            <p id="tossText">Tossing</p>
+        </div>
+            <button id = "toss">Toss Again!</button>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
