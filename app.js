@@ -5,7 +5,8 @@ function generateImage(){
 
     tossText.style.display = 'block'; // Show the text
     tossImg.setAttribute('src', ''); // Set src to blank
-
+    var audio=new Audio("flipsound.mp3");
+    audio.play();
     setTimeout(() => {
         if (Math.round(Math.random()) === 0) {
             tossImg.setAttribute('src', 'heads.png');
@@ -14,6 +15,6 @@ function generateImage(){
         }
         tossText.style.display = 'none'; // Hide the text
         console.log('clicked');
-    }, 1000); // 1000 milliseconds = 1 second
+    }, 1500); // 1000 milliseconds = 1 second
 }
 
