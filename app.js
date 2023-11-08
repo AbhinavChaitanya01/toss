@@ -10,8 +10,10 @@ function generateImage(){
     setTimeout(() => {
         if (Math.round(Math.random()) === 0) {
             tossImg.setAttribute('src', 'heads.png');
+            document.getElementById('decision').innerHTML = "That's a Head."
         } else {
             tossImg.setAttribute('src', 'tails.png');
+            document.getElementById('decision').innerHTML = "That's a Tail."
         }
         tossText.style.display = 'none'; // Hide the text
         console.log('clicked');
